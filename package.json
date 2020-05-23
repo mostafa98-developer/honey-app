@@ -1,0 +1,17 @@
+{
+  "name": "MERN-STACK",
+  "version": "1.0.0",
+  "description": "any",
+  
+  "scripts": {
+    "test": "mern",
+    "server": "nodemon index.js --prefix Server",
+    "React": "npm start --prefix React/mytest"
+  },
+  "keywords": [
+    "mostafa"
+  ],
+  "author": "mostafa almomani",
+  "license": "MIT"
+ 
+}

@@ -1,0 +1,32 @@
+hr{
+    border:  solid #FF8C00;
+  }
+ h2{
+    text-align: center;
+    color: #FF8C00;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  Button {
+    margin-left: 20px;
+  }
+.list {
+  background-color: rgb(253, 199, 133);
+  background-repeat: no-repeat;
+  background-size: 100%; 
+  /* display: flex;
+    flex: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    margin-top: 20; */
+}
+
+.form {
+  background-color: rgb(253, 199, 133);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+}

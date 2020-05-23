@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+
+    <h1>My First Heading</h1>
+
+    <p>My first paragraph.</p>
+    <div id="app"></div>
+    <script type="text/babel">
+        const name = 'mostafa';
+        // const ele = <p className="test"> hello {name}</p>;
+        const ele2 = React.createElement(
+            'h3',
+            { className: 'test' },
+            'Hi mostafa',
+
+            React.createElement(
+                'h4',
+                { className: 'test' },
+                'Hi mostafa'
+            ),
+            React.createElement(
+                'h5',
+                { className: 'test' },
+                'Hi mostafa'
+            ),
+            React.createElement(
+                'h6',
+                { className: 'test' },
+                'Hi mostafa'
+            )
+
+        );
+      
+        class App extends React.Component {
+            state = {
+                name: 'mostafa'
+            };
+            render() {
+                return (
+                    <div>
+                    <h2>{this.state.name}</h2>
+                        < Header title="mostafa" myname="hi" />
+                        < Footer />
+                    </div>
+
+                )
+            }
+        }
+
+        class Header extends React.Component {
+            render() {
+                return (
+                    <header>{console.log(this.props)}</header>
+                )
+            }
+        }
+        class Footer extends React.Component {
+            render() {
+                return (
+                    <footer>Mostafa Almomani</footer>
+                )
+            }
+        }
+        ReactDOM.render(<App />, document.getElementById('app'));
+
+    </script>
+</body>
+
+</html>
